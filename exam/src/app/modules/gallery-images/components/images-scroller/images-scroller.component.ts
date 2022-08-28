@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { GalleryImagesService } from '../../services/gallery-images.service';
 import {Image} from '../../models/image';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'images-scroller',
