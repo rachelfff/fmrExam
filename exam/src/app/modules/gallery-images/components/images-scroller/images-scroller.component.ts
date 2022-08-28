@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
 export class ImagesScrollerComponent implements OnInit ,OnDestroy{
 
   imagesList: Image[] =[];
-  subscription = new Subscription;
+  subscription = new Subscription();
   constructor(private galleryImagesSrv:GalleryImagesService) { }
 
   ngOnInit(): void {

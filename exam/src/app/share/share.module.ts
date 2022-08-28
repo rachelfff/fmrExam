@@ -13,4 +13,4 @@ import { MaterialModule } from "./material.module";
   providers: [],
   bootstrap: []
 })
-export class SharedModule { }
+export class ShareModule { }

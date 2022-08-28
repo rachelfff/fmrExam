@@ -4,7 +4,7 @@ import { ImagesScrollerComponent } from './components/images-scroller/images-scr
 import { GalleryImagesComponent } from './pages/gallery-images/gallery-images.component';
 import { GalleryImagesRoutingModule } from './gallery-images-routing.module';
 import { GalleryImagesService } from './services/gallery-images.service';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { ShareModule } from 'src/app/share/share.module';
 import { ImageSelectionViewComponent } from './components/image-selection-view/image-selection-view.component';
 import { ImageSelectionDetailsComponent } from './components/image-selection-details/image-selection-details.component';
 
@@ -20,7 +20,7 @@ import { ImageSelectionDetailsComponent } from './components/image-selection-det
   entryComponents: [ImagesScrollerComponent],
   imports: [
     CommonModule,
-    SharedModule,
+    ShareModule,
     GalleryImagesRoutingModule
   ],
   providers:[GalleryImagesService]

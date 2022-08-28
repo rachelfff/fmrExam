@@ -3,11 +3,16 @@ mat-toolbar{
     direction: rtl;
     display: flex;
     div{
+        &:first-child{
+         flex-basis: 15%;
+        }
         flex-basis: 10%;
-       margin-left: 5px;
-       border-left: 1px solid black;
+       margin-left: 20px;
+       border-left: 1px solid gray;
+       display: flex;
         span{
             font-size: 1vw;
+            flex-basis: 80%;
         }
         mat-icon{
             vertical-align: middle;

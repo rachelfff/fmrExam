@@ -1,1 +1,11 @@
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+body{
+    font-size: 10px;
+}
+@media only screen and (max-width: 768px) {
+
+    body { 
+       font-size: 12px; 
+    }
+ 
+ }
