@@ -1,0 +1,14 @@
+<mat-toolbar *ngIf="(selectedImage | async) as img">
+    <div> 
+        <span>{{img.author}}</span>
+        <mat-icon>assignment_ind</mat-icon>
+    </div>
+    <div> 
+        <span>{{img.width}}</span>
+        <mat-icon>assignment_ind</mat-icon>
+    </div>
+    <div> 
+        <span>{{img.height}}</span>
+        <mat-icon>assignment_ind</mat-icon>
+    </div>
+</mat-toolbar>

@@ -1,0 +1,4 @@
+<cdk-virtual-scroll-viewport *ngIf="imagesList" [itemSize]="80" class="image-scroller">
+    <img *cdkVirtualFor="let item of imagesList"
+         [style.min-height]="'80px'" [style.width]="'100%'" src="{{item?.download_url}}" (click)="selectImg(item)">
+  </cdk-virtual-scroll-viewport>

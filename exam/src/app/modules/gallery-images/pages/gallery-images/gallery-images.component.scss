@@ -1,0 +1,11 @@
+.gallery-images-main{
+    display: flex;
+    height: 100vh;
+    .images-scroller{
+        width: 15%;
+        direction: rtl;
+    }
+    .image-selection-view{
+        flex-basis: 85%;
+    }
+}
