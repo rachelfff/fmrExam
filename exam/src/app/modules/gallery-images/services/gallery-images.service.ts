@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable } from "rxjs";
+import { BehaviorSubject, Observable,tap } from "rxjs";
 import {Image} from '../models/image'
 
 @Injectable()
@@ -12,7 +12,7 @@ constructor(private http: HttpClient){}
 
  getImagesList() : Observable<Image[]>{
     const url = 'https://picsum.photos/v2/list';
-    return this.http.get<Image[]>(url);
+    return this.http.get<Image[]>(url).pipe(tap((list)=>this.selectImage(list[0])));
  }
 
  selectImage(imgSelected:any){
