@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, CUSTOM_ELEMENTS_SCHEMA, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { GalleryImagesService } from '../../services/gallery-images.service';
 import {Image} from '../../models/image';
 import { Subscription } from 'rxjs';
