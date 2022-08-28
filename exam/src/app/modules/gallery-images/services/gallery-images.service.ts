@@ -7,11 +7,14 @@ import {Image} from '../models/image'
 export class GalleryImagesService {
      selectedImage :BehaviorSubject<Image | null> = new BehaviorSubject<Image | null>(null);
      selectedImage$ = this.selectedImage.asObservable();
-   constructor(private http: HttpClient){}
+     
+constructor(private http: HttpClient){}
+
  getImagesList() : Observable<Image[]>{
     const url = 'https://picsum.photos/v2/list';
     return this.http.get<Image[]>(url);
  }
+
  selectImage(imgSelected:any){
     this.selectedImage.next(imgSelected);
  }
